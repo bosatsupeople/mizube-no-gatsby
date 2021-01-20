@@ -101,13 +101,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-#        hero {
-#          childImageSharp {
-#            fluid(maxWidth: 1280) {
-#              ...GatsbyImageSharpFluid
-#            }
-#          }
-#        }
+        hero {
+          childImageSharp {
+            fluid(maxWidth: 1280) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
